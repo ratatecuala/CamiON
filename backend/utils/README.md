@@ -1,0 +1,1 @@
+Funciones auxiliares planeadas: geocodificación, matriz de distancias, cálculo de ahorro.
