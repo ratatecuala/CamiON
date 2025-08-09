@@ -1,4 +1,6 @@
 # CamiON 🚛
+## 📌 Logo CamiON
+![Logo de CamiON](logo.png)
 
 **Plataforma B2B** para flotas medianas (5–20 camiones) que **optimiza rutas** y reduce **costos operacionales** (combustible, TAG, horas extra) sin instalar hardware ni integrar sistemas complejos.
 
@@ -38,7 +40,8 @@ CamiON/
 yaml
 Copiar
 Editar
-
+## 🚀 Vista del MVP
+![Mockup del MVP](mockup.png)
 ---
 
 ## ▶️ Cómo ejecutar el backend (local)
