@@ -1,48 +1,48 @@
-CamiON 🚛
-Plataforma B2B para flotas medianas (5–20 camiones) que optimiza rutas y reduce costos operacionales (combustible, TAG, horas extra) sin instalar hardware ni integrar sistemas complejos.
+# CamiON 🚛
 
-✨ ¿Qué hace CamiON?
-Carga pedidos desde Excel o copia/pega direcciones.
+**Plataforma B2B** para flotas medianas (5–20 camiones) que **optimiza rutas** y reduce **costos operacionales** (combustible, TAG, horas extra) sin instalar hardware ni integrar sistemas complejos.
 
-Calcula rutas optimizadas (VRP, OR-Tools).
+---
 
-Envía instrucciones por WhatsApp (Twilio API).
+## ✨ ¿Qué hace CamiON?
+- Carga pedidos desde **Excel** o copia/pega direcciones.
+- Calcula rutas optimizadas (VRP, **OR-Tools**).
+- Envía instrucciones por **WhatsApp** (Twilio API).
+- Mide **ahorro en CLP**, km y horas.
+- Panel simple con estado y reporte semanal.
 
-Mide ahorro en CLP, km y horas.
+> **MVP**: mostrar ahorro real en ≤ 30 días.
 
-Panel simple con estado y reporte semanal.
+---
 
-MVP: mostrar ahorro real en ≤ 30 días.
+## 🧱 Arquitectura (MVP)
+- **Backend**: Python + Flask (`/optimizar`).
+- **Optimización**: Google OR-Tools (modelo VRP).
+- **Frontend**: base para React (web).
+- **Datos**: Excel de ejemplo (`backend/sample_pedidos.xlsx`).
 
-🧱 Arquitectura (MVP)
-Backend: Python + Flask (/optimizar).
-
-Optimización: Google OR-Tools (modelo VRP).
-
-Frontend: base para React (web).
-
-Datos: Excel de ejemplo (backend/sample_pedidos.xlsx).
-
-bash
-Copiar
-Editar
 CamiON/
 ├─ backend/
-│  ├─ app.py
-│  ├─ routes/optimize.py
-│  ├─ requirements.txt
-│  └─ sample_pedidos.xlsx
+│ ├─ app.py
+│ ├─ routes/optimize.py
+│ ├─ requirements.txt
+│ └─ sample_pedidos.xlsx
 ├─ frontend/
-│  └─ public/index.html
+│ └─ public/index.html
 ├─ docs/
-│  ├─ API_Specs.md
-│  ├─ MVP_Description.md
-│  └─ IA_Future_Plan.md
+│ ├─ API_Specs.md
+│ ├─ MVP_Description.md
+│ └─ IA_Future_Plan.md
 └─ .gitignore
-▶️ Cómo ejecutar el backend (local)
-bash
+
+yaml
 Copiar
 Editar
+
+---
+
+## ▶️ Cómo ejecutar el backend (local)
+```bash
 cd backend
 python -m venv .venv && source .venv/bin/activate   # En Windows: .venv\Scripts\activate
 pip install -r requirements.txt
